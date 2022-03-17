@@ -7,13 +7,8 @@ function getEmployeeByName(employeeName) {
 
   const { employees } = data;
 
-  const firstName = employees.find((elemento) => elemento.firstName === employeeName);
-  const lastName = employees.find((elemento) => elemento.lastName === employeeName);
-
-  if (firstName) {
-    return firstName;
-  }
-  return lastName;
+  return employees.find((elemento) => elemento.firstName === employeeName
+  || elemento.lastName === employeeName);
 }
 //  console.log(getEmployeeByName('Nelson'))
 
