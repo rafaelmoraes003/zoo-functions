@@ -3,12 +3,12 @@ const data = require('../data/zoo_data');
 const { species } = data;
 const { employees } = data;
 
-const getSpecies = (specieId) => {
+const getSpecies = (specieId) => { // RESGATA O NOME DO ANIMAL
   const specieIdentification = species.find((elemento) => elemento.id === specieId);
   return specieIdentification.name;
 };
 
-const getLocation = (locationId) => {
+const getLocation = (locationId) => { // RESGATA A LOCALIZAÇÃO DO ANIMAL
   const specieLocation = species.find((elemento) => elemento.id === locationId);
   return specieLocation.location;
 };
