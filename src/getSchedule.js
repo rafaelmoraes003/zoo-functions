@@ -34,17 +34,12 @@ const myDays = (parameter) => {
 };
 
 const animalAvailabre = (arg) => {
-  let animal;
-  species.forEach(((elemento) => {
-    animal = species.map((specie) => specie.name);
-  }));
+  const animal = species.map((specie) => specie.name);
   if (animal.includes(arg)) {
     const findAnimal = species.find((elemento) => elemento.name === arg);
     return findAnimal.availability;
   }
 };
-
-// console.log(animalAvailabre('penguins'))
 
 function getSchedule(scheduleTarget) {
   if (!scheduleTarget) {
@@ -54,12 +49,10 @@ function getSchedule(scheduleTarget) {
     return myDays(scheduleTarget);
   }
   if (animalAvailabre(scheduleTarget)) {
-    const myAnimal = species.find((elemento) => elemento.name === scheduleTarget);
-    return myAnimal.availability;
+    return animalAvailabre(scheduleTarget);
   }
+
   return daysSchedule();
 }
-
-// console.log(getSchedule('Monday'));
 
 module.exports = getSchedule;
