@@ -12,7 +12,7 @@ const noNameIncluded = () => {
   return animalsByRegion;
 };
 
-const names = (sorted, sex) => {
+const names = () => {
   const myNames = regions.reduce((acc, currentValue) => {
     acc[currentValue] = noNameIncluded()[currentValue].map((elemento) => {
       const key = species.find((elemento1) => elemento1.name === elemento);
@@ -32,7 +32,9 @@ const sortedOrSex = (sorted, sex) => {
           .map((elementoSxName) => elementoSxName.name).sort(),
         };
       }
+
       if (sorted) return { [key.name]: key.residents.map((elemento2) => elemento2.name).sort() }; // SE FOR PASSADO SOMENTE SORTED
+
       return { [key.name]: key.residents.filter((elementoSx) => elementoSx.sex === sex)
         .map((elementoSxName) => elementoSxName.name),
       }; // SE FOR PASSADO SOMENTE SEX

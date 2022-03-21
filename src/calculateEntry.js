@@ -42,6 +42,6 @@ function calculateEntry(finalPrice) {
   + (seniorCount.length * seniorPrice));
 }
 
-// console.log(calculateEntry(entrants));
+calculateEntry(entrants);
 
 module.exports = { calculateEntry, countEntrants };
