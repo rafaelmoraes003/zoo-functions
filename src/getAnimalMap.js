@@ -24,7 +24,7 @@ const names = (sorted, sex) => {
 };
 
 const sortedOrSex = (sorted, sex) => {
-  const sla = regions.reduce((acc, currentValue) => {
+  const sortedSex = regions.reduce((acc, currentValue) => {
     acc[currentValue] = noNameIncluded()[currentValue].map((elemento) => {
       const key = species.find((elemento1) => elemento1.name === elemento);
       if (sorted && sex) {
@@ -39,7 +39,7 @@ const sortedOrSex = (sorted, sex) => {
     });
     return acc;
   }, {});
-  return sla;
+  return sortedSex;
 };
 
 function getAnimalMap(options) {
