@@ -20,6 +20,6 @@ function countAnimals(animal) {
   return myAnimal.residents.length;
 }
 
-console.log(countAnimals({ specie: 'elephants', sex: 'male' }));
+// console.log(countAnimals({ specie: 'elephants', sex: 'male' }));
 
 module.exports = countAnimals;

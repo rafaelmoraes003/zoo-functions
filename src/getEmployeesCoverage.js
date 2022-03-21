@@ -34,6 +34,6 @@ function getEmployeesCoverage(person) {
     locations: mapEmployee.responsibleFor.map((elemento) => getLocation(elemento)) };
 }
 
-console.log(getEmployeesCoverage({ name: 'Ardith' }));
+// console.log(getEmployeesCoverage({ name: 'Ardith' }));
 
 module.exports = getEmployeesCoverage;
