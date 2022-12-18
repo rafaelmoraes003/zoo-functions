@@ -1,18 +1,18 @@
-<h1 align="left">Projeto Zoo Functions</h1>
+<h1 align="left">Zoo Functions</h1>
 
 ###
 
-<p align="left">O objetivo deste projeto é a utilização de Higher Order Functins, leitura e interpretação de testes e novas funcionalidades do ES6.</p>
+<p align="left">The goal of this project is the use of Higher Order Functins, reading and interpreting tests and new features of ES6.</p>
 
 ###
 
-<h2 align="left">Tecnologias utilizadas</h2>
+<h2 align="left">Technologies used</h2>
 
 ###
 
 <div align="left">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="70" width="52" alt="javascript logo"  />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg" height="70" width="52" alt="jest logo"  />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="50" width="62" alt="javascript logo"  />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg" height="50" width="62" alt="jest logo"  />
 </div>
 
 ###
